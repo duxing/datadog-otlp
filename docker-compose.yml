@@ -21,6 +21,8 @@ services:
       - 6379
   datadog:
     image: datadog/agent:7.35.0
+    ports:
+      - 4317
     environment:
       # DD_LOG_LEVEL: trace
       DD_API_KEY: ${DD_API_KEY}
